@@ -1,118 +1,45 @@
-# h = int(input("z = "))
-# x = int(input("x = "))
-# def numero(z):
-#     return z - x
-# print(numero(x))
-
-# def numero(luku):
-#         return luku - x
-# numero(100)
-# y = numero(100)
-# b =  abs(y)
-# _____________________________ex2
-# def max_sum(A):
-#     x = 0
-#     for i in A:
-#         x += int(i)
-#     return x / len(A)
-#  
-#  
-# try:
-#     A = input("numbers: ").split()
-#     print(max_sum(A))
-#  
-# except ValueError:
-#     print("Input error")
-# _____________________________ex1
-# x = int(input("x = "))
-# y = int(input("y = "))
-# def numbers(x, y):
-# 
-#     print(x + y)
-# numbers(x, y)
-#_____________________________ex2 (second variant)
-# x = int(input("x = "))
-# y = int(input("y = "))
-# z = int(input("z = "))
-# def numbers(x, y, z):
-#     print((x + y + z)/3)
-# numbers(x,y,z)
-
-
-
-#____________________________without def ex 3
-# guys = [12,32,4,12]
-# for i in range(len(guys)):
-#     if guys[i] % 2== 0:
-#         print("yes")
-#     else:
-#         print("no")
-#_____________________________with def ex 3
-# def my_function(food):
-#     for i in food:
-#         if i % 2 == 0:
-#             print(i)
-#     
-# fruits = [3, 6, 2]
-# my_function(fruits)
-#________________________ ex 4
-# def my_function(food):
-#     for i in food:
-#         if i % 2 > 0:
-#             print(i)
-#      
-# fruits = [3, 6, 2]
-# my_function(fruits)
-# ____________________________ ex 5
-# z = int(input("z = "))
-# def numbers (z):
-#     print(z + 1)
-# numbers(z)
-# ___________________ ex 6
-# b = int(input("b = "))
-# def numbers (b):
-#     print(abs(b))   
-# numbers(b)
-# _______________________ ex 7 (maximum)
-# def large(arr): 
-#     maxss_ = arr[0]
-#     for ele in arr:
-#         if ele > maxss_:
-#            maxss_ = ele
-#     return maxss_ 
-# 
-# 
-# list1 = [1,4,5,2,6]
-# result = large(list1)
-# print(result)
-
-#  _______________________ ex 7 (minimum)
-# def large(arr): 
-#     maxss_ = arr[0]
-#     for ele in arr:
-#         if ele < maxss_:
-#            maxss_ = ele
-#     return maxss_ 
-# 
-# 
-# list1 = [1,4,5,2,6]
-# result = large(list1)
-# print(result)
-# _________________________ middle ex 7
-# def calc_average(lst):
-#     return sum(lst) / len(lst) 
-# lst = [24, 19, 35, 46, 75, 29, 30, 18] 
-# average = calc_average(lst)
-# print("middle ", round(average, 3)) 
-
-# ___________________________ ex  8
-# def pupsik(hole):
-#     if hole <= 1:
-#         return hole
-#     else:
-#         return (pupsik(hole - 1) + pupsik(hole - 2))
-#     
-# nhuey = 21
-# for i in range(nhuey):
-#     print(pupsik(i))
-#     
+#z = int(input("z = "))  # Enter a value for variable y
+#x = int(input("x = "))  # Enter a value for variable x
+#def numero(y):
+#    return z - x  # Return the difference between z and x
+#y = 0  Initialize the variable y (can be any value, depending on your logic)
+#print(numero(y))  # Display the result of calling the function numero(y)
+#------------------------------------------------------------------------------
+#def max_sum(A):
+#    x = 0                      # Initialize the variable x to accumulate the sum of elements
+#    for i in A:                # Start of loop: for each element i in the list A
+#        x += int(i)            # Add the integer value of i to the current sum x
+#    return x / len(A)          # Return the average value by dividing the sum by the number of elements in the list
+#
+#try:
+#    A = input("numbers: ").split()    # Input a string of numbers and split it into a list of elements
+#    print(max_sum(A))                 # Call the max_sum function with the entered list and print the result
+#except ValueError:
+#    print("Input error")              # If a ValueError occurs, print the "Input error" message
+#------------------------------------------------------------------------------
+#guys = [12, 32, 4, 12]  # A list of numbers
+#for i in range(len(guys)):  # Loop through each index in the list 'guys'
+#    if guys[i] % 2 == 0:    # Check if the number at index 'i' is even
+#        print("yes")        # If even, print "yes"
+#    else:
+#        print("no")         # If not even, print "no"
+#-----------------------------------------------------------------------------
+#def large(arr): 
+#    maxss_ = arr[0]       # Initialize the variable maxss_ with the first element of the array 'arr'
+#    for ele in arr:       # Loop through each element 'ele' in the array 'arr'
+#        if ele < maxss_:  # Compare the current element 'ele' with the current smallest value 'maxss_'
+#            maxss_ = ele   # If 'ele' is smaller than 'maxss_', update 'maxss_' to 'ele'
+#    return maxss_         # Return the smallest value found
+#
+#list1 = [1, 4, 5, 2, 6]   # Example list of numbers
+#
+#result = large(list1)    # Call the function 'large' with the list 'list1' to find the smallest element
+#print(result)            # Print the result (the smallest element in the list)
+#------------------------------------------------------------------------------
+#def calc_average(lst):
+#    return sum(lst) / len(lst)  # Calculate the average by summing up the list and dividing by its length
+#
+#lst = [24, 19, 35, 46, 75, 29, 30, 18]  # Example list of numbers
+#
+#average = calc_average(lst)  # Calculate the average of the list using the calc_average function
+#print("middle ", round(average, 3))  # Print the rounded average value with the message "middle "
